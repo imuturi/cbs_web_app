@@ -107,7 +107,7 @@ export class SidenavComponent implements OnInit, AfterViewInit {
    * Opens Mifos JIRA Wiki page.
    */
   help() {
-    window.open('https://mifosforge.jira.com/wiki/spaces/docs/pages/52035622/User+Manual', '_blank');
+    window.open('https://clinifix.com/wiki/spaces/docs/pages/52035622/User+Manual', '_blank');
   }
 
   /**

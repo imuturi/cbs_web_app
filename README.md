@@ -16,8 +16,8 @@ Mifos X Web App is a modern single-page application (SPA) built on top of the Mi
 - [GitHub Repository](https://github.com/openMF/web-app)
 - [TestRigor](https://app.testrigor.com/public/X3THbQd9nxLMxkdPu)
 - [Slack Channel](https://app.slack.com/client/T0F5GHE8Y/CJJGJLN10)
-- [Jira Board of Mifos](https://mifosforge.jira.com/jira/your-work)
-- [Jira Board of Mifos Web App Project](https://mifosforge.jira.com/jira/software/c/projects/WEB/boards/62)
+- [Jira Board of Mifos](https://clinifix.com/jira/your-work)
+- [Jira Board of Mifos Web App Project](https://clinifix.com/jira/software/c/projects/WEB/boards/62)
 
 ## Installation Guide
 

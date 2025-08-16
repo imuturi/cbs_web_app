@@ -4,9 +4,9 @@
 - Sign the [Contribution License Agreement](http://mifos.org/about-us/financial-legal/mifos-contributor-agreement/).
 - Always follow the [code of conduct](https://mifos.org/resources/community/code-of-conduct/) - this is important to us. We are proud to be open, tolerant and providing a positive environment.
 - Introduce yourself or ask a question on the [#webapp channel on Slack](https://app.slack.com/client/T0F5GHE8Y/CJJGJLN10).
-- Find a [Jira](https://mifosforge.jira.com/browse/WEB) ticket to work on and start smashing!
+- Find a [Jira](https://clinifix.com/browse/WEB) ticket to work on and start smashing!
 - Sign up to the [mailing list](https://sourceforge.net/projects/mifos/lists/mifos-developer).
-- Learn more at our [getting started guide](https://mifosforge.jira.com/wiki/spaces/RES/pages/464322561/New+Contributor+Getting+Started+Guide).
+- Learn more at our [getting started guide](https://clinifix.com/wiki/spaces/RES/pages/464322561/New+Contributor+Getting+Started+Guide).
 - Have a look at our [Wiki](https://github.com/openMF/web-app/wiki).
 
 Tips for working with the web app repository:

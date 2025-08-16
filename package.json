@@ -120,7 +120,7 @@
     "url": "git+https://github.com/openMF/web-app.git"
   },
   "bugs": {
-    "url": "https://mifosforge.jira.com/jira/software/c/projects/WEB/boards/62"
+    "url": "https://clinifix.com/jira/software/c/projects/WEB/boards/62"
   },
   "engines": {
     "node": ">= 16.15.1",
