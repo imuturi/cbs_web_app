@@ -70,78 +70,47 @@
           </mat-icon>
           <a matLine #dashboard>{{ 'labels.menus.Dashboard' | translate }}</a>
         </mat-list-item>
+
         <mat-list-item
-          [routerLink]="['/navigation']"
+          [routerLink]="['/clients']"
           [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Navigation' | translate }}"
+          matTooltip="{{ 'tooltips.Customers' | translate }}"
           routerLinkActive="active-menu"
           [routerLinkActiveOptions]="{ exact: false }"
         >
           <mat-icon matListIcon>
-            <fa-icon icon="location-arrow" size="sm"></fa-icon>
+            <fa-icon icon="users" size="sm"></fa-icon>
           </mat-icon>
-          <a matLine #navigation>{{ 'labels.menus.Navigation' | translate }}</a>
+          <a matLine #navigation>{{ 'labels.menus.Customers' | translate }}</a>
         </mat-list-item>
+
         <mat-list-item
-          [routerLink]="['/checker-inbox-and-tasks/checker-inbox']"
+          [routerLink]="['/accounting/journal-entries']"
           [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Checker Inbox and Tasks' | translate }}"
+          matTooltip="{{ 'tooltips.Transactions' | translate }}"
           routerLinkActive="active-menu"
           [routerLinkActiveOptions]="{ exact: false }"
         >
           <mat-icon matListIcon>
-            <i class="fa fa-check"></i>
+            <fa-icon icon="list" size="sm"></fa-icon>
           </mat-icon>
-          <a matLine>{{ 'labels.menus.Checker Inbox and Tasks' | translate }}</a>
+          <a matLine>{{ 'labels.menus.Transactions' | translate }}</a>
         </mat-list-item>
+
         <mat-list-item
-          [routerLink]="['/collections/individual-collection-sheet']"
+          [routerLink]="['/reports/run/Active%20Loans%20-%20Summary?type=Table&id=11']"
           [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Individual Collection Sheet' | translate }}"
+          matTooltip="{{ 'tooltips.Loans' | translate }}"
           routerLinkActive="active-menu"
           [routerLinkActiveOptions]="{ exact: false }"
         >
           <mat-icon matListIcon>
-            <i class="fa fa-tasks"></i>
+            <fa-icon icon="users" size="sm"></fa-icon>
+            <i class="fa-solid fa-landmark"></i>
           </mat-icon>
-          <a matLine>{{ 'labels.menus.Individual Collection Sheet' | translate }}</a>
+          <a matLine>{{ 'labels.menus.Loans' | translate }}</a>
         </mat-list-item>
-        <mat-list-item
-          [routerLink]="['/notifications']"
-          [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Notifications' | translate }}"
-          routerLinkActive="active-menu"
-          [routerLinkActiveOptions]="{ exact: false }"
-        >
-          <mat-icon matListIcon>
-            <fa-icon icon="bell" size="sm"></fa-icon>
-          </mat-icon>
-          <a matLine>{{ 'labels.menus.Notifications' | translate }}</a>
-        </mat-list-item>
-        <mat-list-item
-          [routerLink]="['/accounting/journal-entries/frequent-postings']"
-          [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Frequent Postings' | translate }}"
-          routerLinkActive="active-menu"
-          [routerLinkActiveOptions]="{ exact: false }"
-        >
-          <mat-icon matListIcon>
-            <fa-icon icon="sync" size="sm"></fa-icon>
-          </mat-icon>
-          <a matLine #frequentPostings>{{ 'labels.menus.Frequent Postings' | translate }}</a>
-        </mat-list-item>
-        <mat-list-item
-          [routerLink]="['/accounting/journal-entries/create']"
-          [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Create Journal Entry' | translate }}"
-          routerLinkActive="active-menu"
-          [routerLinkActiveOptions]="{ exact: false }"
-        >
-          <mat-icon matListIcon>
-            <fa-icon icon="plus" size="sm"></fa-icon>
-          </mat-icon>
-          <a matLine #createJournalEntry>{{ 'labels.menus.Create Journal Entry' | translate }}</a>
-        </mat-list-item>
+
         <mat-list-item
           [routerLink]="['/accounting/chart-of-accounts']"
           [matTooltipPosition]="tooltipPosition"
@@ -154,21 +123,64 @@
           </mat-icon>
           <a matLine #chartOfAccounts>{{ 'labels.menus.Chart of Accounts' | translate }}</a>
         </mat-list-item>
+
         <mat-list-item
-          (click)="showKeyboardShortcuts()"
+          [routerLink]="['/']"
           [matTooltipPosition]="tooltipPosition"
-          matTooltip="{{ 'tooltips.Keyboard Shortcuts' | translate }}"
+          matTooltip="{{ 'tooltips.AML and KYC' | translate }}"
+          routerLinkActive="active-menu"
+          [routerLinkActiveOptions]="{ exact: false }"
         >
           <mat-icon matListIcon>
-            <fa-icon icon="keyboard" size="sm"></fa-icon>
+            <fa-icon icon="user-shield" size="sm"></fa-icon>
           </mat-icon>
-          <a matLine>{{ 'labels.menus.Keyboard Shortcuts' | translate }}</a>
+          <a matLine>{{ 'labels.menus.AML and KYC' | translate }}</a>
         </mat-list-item>
-        <mat-list-item [matTooltipPosition]="tooltipPosition" matTooltip="{{ 'tooltips.Help' | translate }}">
-          <mat-icon matListIcon (click)="help()">
-            <fa-icon icon="question-circle" size="sm"></fa-icon>
+
+        <mat-list-item
+          [routerLink]="['/']"
+          [matTooltipPosition]="tooltipPosition"
+          matTooltip="{{ 'tooltips.Cards' | translate }}"
+          routerLinkActive="active-menu"
+          [routerLinkActiveOptions]="{ exact: false }"
+        >
+          <mat-icon matListIcon>
+            <fa-icon [icon]="['fab', 'cc-visa']" size="sm"></fa-icon>
           </mat-icon>
-          <a matLine>{{ 'labels.menus.Help' | translate }}</a>
+          <a matLine #frequentPostings>{{ 'labels.menus.Cards' | translate }}</a>
+        </mat-list-item>
+
+        <mat-list-item
+          [routerLink]="['/reports']"
+          [matTooltipPosition]="tooltipPosition"
+          matTooltip="{{ 'tooltips.Reports' | translate }}"
+          routerLinkActive="active-menu"
+          [routerLinkActiveOptions]="{ exact: false }"
+        >
+          <mat-icon matListIcon>
+            <fa-icon [icon]="['fas', 'database']" size="sm"></fa-icon>
+          </mat-icon>
+          <a matLine #createJournalEntry>{{ 'labels.menus.Reports' | translate }}</a>
+        </mat-list-item>
+
+        <!-- <mat-list-item
+          (click)="showKeyboardShortcuts()"
+          [matTooltipPosition]="tooltipPosition"
+          matTooltip="{{ 'tooltips.Administration' | translate }}"
+        > -->
+
+        <mat-list-item
+          [routerLink]="['/system']"
+          [matTooltipPosition]="tooltipPosition"
+          matTooltip="{{ 'tooltips.Administration' | translate }}"
+          routerLinkActive="active-menu"
+          [routerLinkActiveOptions]="{ exact: false }"
+        >
+          <mat-icon matListIcon>
+            <!-- <i class="fa-solid fa-sliders"></i> -->
+            <fa-icon [icon]="['fas', 'sliders']" size="sm"></fa-icon>
+          </mat-icon>
+          <a matLine>{{ 'labels.menus.Administration' | translate }}</a>
         </mat-list-item>
       </mat-nav-list>
     </div>

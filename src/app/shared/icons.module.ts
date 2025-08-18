@@ -112,9 +112,12 @@ import {
   faPause,
   faReceipt,
   faTableCells,
-  faSave
+  faSave,
+  faDatabase,
+  faSliders
 } from '@fortawesome/free-solid-svg-icons';
 
+import { faCcVisa } from '@fortawesome/free-brands-svg-icons';
 /**
  * Icons Module
  *
@@ -237,7 +240,10 @@ export class IconsModule {
       faUndo,
       faReceipt,
       faTableCells,
-      faSave
+      faSave,
+      faCcVisa,
+      faDatabase,
+      faSliders
     );
   }
 }
